@@ -23,5 +23,31 @@ function dateAndTime() {
     newYorkDate.innerHTML = newYork.format("ddd, MMM Do YYYY");
     newYorkTime.innerHTML = newYork.format("hh:mm:ss [<small>]A[</small>]");
 }
+
+function addSearchCity(event) {
+    console.log(event.target);
+    let cityTimeZone = event.target.value;
+    let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+    let cityZone = moment().tz(cityTimeZone);
+    let citiesElement = document.querySelector("#cities");
+    citiesElement.innerHTML += `
+        <div class="city">
+            <div>
+                <h2>${cityName}</h2>
+                <div class="date">${cityZone.format("ddd, MMM Do YYYY")}</div>
+            </div>
+            <div class="time">
+                ${cityZone.format("hh:mm:ss")} <small>${cityZone.format(
+        "A"
+    )}</small>
+            </div>
+        </div>
+    `;
+}
+
 dateAndTime();
 setInterval(dateAndTime, 1000);
+
+let searchCity = document.getElementById("search");
+console.log(searchCity);
+searchCity.addEventListener("change", addSearchCity);
