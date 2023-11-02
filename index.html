@@ -5,48 +5,59 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>My world clock project</title>
         <link rel="stylesheet" href="./css/style.css" type="text/css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" rel="noopener"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone.min.js" rel="noopener"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js" rel="noopener"></script>
-
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"
+            rel="noopener"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone.min.js"
+            rel="noopener"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"
+            rel="noopener"
+        ></script>
     </head>
     <body>
         <div class="container">
-            <h1 class="heading">World Clock</h1>
-            <div>
-                <select class="select-list" id="search">
-                    <option value="">Select a city...</option>
-                    <option value="Americs/Los_Angeles">Los Angeles</option>
-                    <option value="Australia/Sydney">Sydney</option>
-                    <option value="Europe/Paris">Paris</option>
-                </select>
-                <div id="cities">
-                    <div class="city" id="tokyo">
-                        <div>
-                            <h2>Tokyo</h2>
-                            <div class="date"></div>
-                        </div>
-                        <div class="time"></div>
+            <h1 class="heading">World Clock2</h1>
+            <select class="select-list" id="search">
+                <option value="">Select a city...</option>
+                <option value="current">Current Location</option>
+                <option value="Americs/Los_Angeles">Los Angeles</option>
+                <option value="Australia/Sydney">Sydney</option>
+                <option value="Europe/Paris">Paris</option>
+            </select>
+            <div id="cities">
+                <div class="city" id="tokyo">
+                    <div>
+                        <h2>Tokyo</h2>
+                        <div class="date"></div>
                     </div>
-                    <div class="city" id="london">
-                        <div>
-                            <h2>London</h2>
-                            <div class="date"></div>
-                        </div>
-                        <div class="time"></div>
+                    <div class="time"></div>
+                </div>
+                <div class="city" id="london">
+                    <div>
+                        <h2>London</h2>
+                        <div class="date"></div>
                     </div>
-                    <div class="city" id="new-york">
-                        <div>
-                            <h2>New York</h2>
-                            <div class="date"></div>
-                        </div>
-                        <div class="time"></div>
+                    <div class="time"></div>
+                </div>
+                <div class="city" id="new-york">
+                    <div>
+                        <h2>New York</h2>
+                        <div class="date"></div>
                     </div>
+                    <div class="time"></div>
+                </div>
             </div>
         </div>
         <footer class="footer">

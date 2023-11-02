@@ -1,10 +1,10 @@
 body {
     text-align: center;
-    background-color: #ECF1FD;
-    font-family: 'Montserrat', sans-serif;
+    background-color: #ecf1fd;
+    font-family: "Montserrat", sans-serif;
     color: rgb(99, 99, 103);
-    
-    
+}
+
 .container {
     display: block;
     text-align: center;
@@ -19,45 +19,50 @@ body {
     background-color: #edf2fc;
     border: none;
     padding: 20px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .select-list {
     padding: 8px;
-    border: 1px solid #d7e1f7; 
+    border: 1px solid #d7e1f7;
     border-radius: 40px;
     width: 250px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 15px;
-    background-color: #E6EDFB;
+    background-color: #e6edfb;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     outline: 0;
-
 }
-.city{
+.current-date {
+    margin-top: -15px;
+}
+.current-time {
+    margin-top: 5px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.city {
     display: flex;
-    margin: 3px  20px;
+    margin: 3px 20px;
     justify-content: space-between;
     /* border-bottom: 0.5px dashed #b1cbfe ; */
-
 }
 
-.date{
+.date {
     margin-top: -9px;
     opacity: 0.8;
-    
 }
-.time{
+.time {
     font-size: 28px;
     font-weight: bold;
     margin-top: 40px;
 }
-.time small{
+.time small {
     font-size: 12px;
     vertical-align: middle;
 }
-.footer{
-    position: relative;
-    top: 50px;
+.footer {
     font-size: 12px;
 }
