@@ -45,6 +45,7 @@ function addSearchCity(event) {
     )}</small>
             </div>
         </div>
+        <a href = "/">Home Page</a>
     `;
 }
 
